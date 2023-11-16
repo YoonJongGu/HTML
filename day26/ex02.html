@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #root {
+            width: 900px;
+            margin: auto;
+        }
+        #lang {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            height: 30px;           
+        }
+        #lang > select {
+            border: 1px solid #ccc;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            width: 95px;
+            height: 30px;
+            padding: 4px 10px 6px 8px;
+            cursor: pointer;
+        }
+        #form {
+            width: 500px;
+            margin: auto;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+        .logo img {            
+            width: 155px;
+            height: 30px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        .tab {
+            display: flex;
+            justify-content: space-evenly;            
+        }
+        .tab div {
+            border: 1px solid #ccc;            
+            width: 100%;
+            height: auto;
+            text-align: center;
+            padding: 15px;
+        }
+        .tab div:nth-child(1) {
+            border-radius: 8px 0 0 0;
+            border-bottom: none;
+            border-right: none;
+            color: #333;
+        }
+        .tab div:nth-child(2) {
+            border-radius: 0 0 0 8px;
+            border-right: none;
+            color: #777;
+        }
+        .tab div:nth-child(3) {
+            border-radius: 0 8px 0 0;               
+            color: #777;
+        }
+        .sb {
+            display: flex;
+            justify-content: space-between;
+            /* position: relative; */
+        }
+        /* .sb img {
+            margin: -193px 0 0 -486px;                    
+        } */
+        .sb label:nth-child(1) {
+            color: #777;
+            /* width: 40px;
+            height: 40px;
+            overflow: hidden;             */
+        }
+        .sb label:nth-child(2) {
+            color: #777;
+        }
+        .sb input:in-range {
+            width: 33px;
+            height: 18px;
+            background-color: #c3c8c9;
+            border-radius: 12px;            
+            cursor: pointer;       
+        }
+        .menu {
+            display: flex;            
+            justify-content: center;
+            font-size: 14px;
+            color: #888;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+        .menu div:nth-child(1) {
+            padding: 0 10px 0 0;
+        }
+        .menu div:nth-child(2) {
+            padding: 0 10px;
+        }
+        .menu div:nth-child(3) {
+            padding: 0 0 0 10px;
+        }
+        .banner {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        .banner img {            
+            width: 100%;
+            height: auto;
+        }
+        .ex1 {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+        }
+        .ex2 {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-top: 10px;
+        }
+        .ex2 > img {
+            width: 70px;
+            height: 15px;
+        }
+        .btn > button {
+            width: 100%;
+            height: 52px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #03c75a;
+            border: 1px solid #fff;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .btn {
+            text-align: center;
+            margin-top: 40px;       
+        }
+        .login > p {            
+            width: 90%;
+            height: auto;
+            border: 1px solid #888;
+            padding: 14px 17px;
+            margin: auto;            
+        }        
+        .login > p:nth-child(1) {
+            border-radius: 8px 8px 0 0;
+            border-bottom: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .login > p:nth-child(2) {
+            border-radius: 0 0 8px 8px; 
+            text-align: center;  
+            margin-bottom: 10px;         
+        }
+        .login > p > input {
+            border: 0px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            color: #222;
+        }
+        .inside {
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            padding: 10px 30px 15px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <div id="root">
+        <div id="lang">
+            <select>
+                <option>한국어</option>
+                <option>English</option>
+                <option>中文</option>
+            </select>
+        </div>
+        <div id="form">
+
+            <div class="logo"><a href=""><img src="img/로고.PNG"></a></div>
+
+            <div class="tab">
+                <div class="log">ID 로그인</div>
+                <div class="num">일회용 번호</div>
+                <div class="qr">QR코드</div>
+            </div>
+            
+            <div class="input">
+                <div class="inside">
+                    <div class="login">
+                        <p><input type="text" placeholder="아이디"></p>
+                        <p><input type="text" placeholder="비밀번호"></p>
+                    </div>
+
+                    <div class="sb">
+                        <label>
+                            <input type="checkbox">
+                            <!-- <img src="img/아이콘.png"> -->
+                            로그인 상태유지
+                        </label>
+                        <label>
+                            IP보안
+                            <input type="range" min="0" max="1">
+                        </label>
+                    </div>
+
+                    <div class="btn">
+                        <button>로그인</button>
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <div>비밀번호 찾기</div>
+                    |
+                    <div>아이디 찾기</div>
+                    |
+                    <div>회원가입</div>
+                </div>
+                
+                <div class="banner"><a href=""><img src="img/배너.png"></a></div>
+
+                <div class="ex1">이용약관 | <strong>개인정보처리방침</strong> | 책임의 한계와 법적고지 | 회원정보 고객센터</div>
+                <div class="ex2"><img src="img/로고.PNG"> Copyright ⓒ <strong>NAVER Corp.</strong> All Rights Reserved</div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
