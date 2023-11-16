@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz.html</title>
+    <style>
+        nav {
+            width: 1000px;
+            margin: auto;
+        }
+        ul, ol {
+            list-style: none;
+            padding: 0;
+        }
+        ul {
+            display: flex;            
+        }
+        ul > li {
+            width: 100%;            
+            border: 1px solid #222;
+        }
+        ol {
+            display: none;
+            position: absolute;
+            border: 1px solid #00d2cf;            
+            background-color: #123643;
+            color: white;
+            padding: 10px;
+            margin-top: 12px;
+            margin-left: -10px;
+        }
+        ol > li {
+            width: 120%;            
+        }
+        ul > li:hover > ol {
+            display: block;
+        }
+        .menu {
+            padding: 10px;
+            text-align: center;
+            background-color: #123643;
+            color: white;
+            border-top: 2px solid #00d2cf;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .menu:nth-child(-n+9) {
+            border-right: none;
+        }
+        .item {
+            padding: 10px 5px;
+            text-align: left;
+            font-size: 12px;
+            margin: 0;
+        }
+        ul > li:hover {
+            border-bottom: 2px solid #00d2cf;
+            color: #00d2cf;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>lol.inven.co.kr 드랍다운 메뉴 따라하기</h1>
+    <hr>
+
+    <nav>
+        <ul>
+            <li class="menu">홈</li>
+
+            <li class="menu">기록실
+                <ol>
+                    <li class="item"><a href="">LoL 기록실 - 경기기록</a></li>
+                    <li class="item"><a href="">LoL 기록실 - 선수기록</a></li>
+                    <li class="item"><a href="">LoL 기록실 - 팀 통산</a></li>
+                    <li class="item"><a href="">LoL 기록실 - 선수 통산</a></li>
+                    <li class="item"><a href="">LoL 기록실 - 챔피언 픽/밴</a></li>
+                    <li class="item"><a href="">LoL 기록실 - 래더 랭킹</a></li>
+                    <li class="item"><a href="">LoL 프로팀 정보</a></li>
+                </ol>
+            </li>
+
+            <li class="menu">LCK 인벤</li>
+
+            <li class="menu">챔피언
+                <ol>
+                    <li class="item"><a href="">LoL 챔피언 정보</a></li>
+                    <li class="item"><a href="">챔피언 능력치 랭킹</a></li>
+                    <li class="item"><a href="">실시간 챔피언 평가</a></li>
+                </ol>
+            </li>
+
+            <li class="menu">카운터픽</li>
+
+            <li class="menu">공략</li>
+
+            <li class="menu">스킨갤러리</li>
+
+            <li class="menu">방송/영상</li>
+
+            <li class="menu">LOL DB
+                <ol>
+                    <li class="item"><a href="">프리시즌 룬 시뮬</a></li>
+                    <li class="item"><a href="">프리시즌 아이템 DB</a></li>
+                    <li class="item"><a href="">소환사 주문 DB</a></li>
+                </ol>
+            </li>
+        </ul>
+    </nav>
+
+    
+</body>
+</html>
